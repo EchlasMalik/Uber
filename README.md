@@ -139,10 +139,6 @@ We welcome contributions! If you want to contribute to this project, please fork
 - Enhance UI/UX
 - Add new features
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - **Google API:** Thanks to Google for providing the Places API and Matrix API for location and distance services.
