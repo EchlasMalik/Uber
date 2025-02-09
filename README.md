@@ -6,8 +6,6 @@ This is a clone of the Uber ride-sharing application built using **React Native*
 
 ## Features
 
-- **Real-time Location Tracking:** Uses GPS to track the user’s current location and provide real-time navigation.
-- **Ride Request:** Users can request a ride, view available drivers nearby, and get the estimated time of arrival.
 - **Distance & Duration Calculation:** Implements **Google Matrix API** to calculate the distance and time between the rider and driver.
 - **Google Places API Integration:** Provides search functionality for locations using **Google Places API**.
 - **Google Autocomplete:** Suggests location names to users when typing in the search field.
