@@ -140,5 +140,3 @@ We welcome contributions! If you want to contribute to this project, please fork
 - **Tailwind CSS:** Tailwind CSS is a fantastic utility-first CSS framework that helped us build a responsive design.
 - **Redux:** Redux made managing state across multiple components easy and efficient.
 ```
-
-Just copy the above code and save it as `README.md` in your project root folder!
