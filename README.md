@@ -93,21 +93,15 @@ The app uses the **Google Places API** to allow users to search for places by ty
 
 When the user requests a ride, the app calculates the distance and duration between the user's location and the driver’s location using the **Google Matrix API**. This information is displayed in the app to give users an estimated time of arrival (ETA) for their ride.
 
-### 3. **Real-Time Location Tracking**
 
-Using the device's GPS, the app tracks the user's current location. This data is passed to the backend (or mock backend in this case) to display on the map and show nearby drivers.
-
-### 4. **State Management with Redux**
+### 3. **State Management with Redux**
 
 State management is handled through **Redux**, making it easier to share data across multiple components. The app uses Redux to manage states such as user data, ride request status, driver availability, and more.
 
-### 5. **Tailwind CSS for Styling**
+### 4. **Tailwind CSS for Styling**
 
 **Tailwind CSS** is used to style the app. It offers utility-first classes that make it easy to create custom designs without writing a lot of CSS. The responsive design ensures the app looks great on both iOS and Android devices.
 
-### 6. **Ride Request and Driver Matching**
-
-The user can request a ride by specifying a pickup and drop-off location. The app will display available drivers nearby, and the user can view the estimated time of arrival. After confirming the ride, the driver is notified and the ride is booked.
 
 ## Screenshots
 
