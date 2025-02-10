@@ -6,12 +6,13 @@ import tw from 'tailwind-react-native-classnames';
 import NavOptions from '../components/NavOptions';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import { GOOGLE_MAPS_APIKEY } from "@env";
-import { useDispatch } from "react-redux";
-import { setDestination, setOrigin } from "../slices/navSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { selectOrigin, setDestination, setOrigin } from "../slices/navSlice";
 import NavFavourites from "../components/NavFavourites";
 
 const HomeScreen = () => {
   const dispatch = useDispatch();
+  const origin = useSelector(selectOrigin);
 
   return (
     <SafeAreaView style={tw`bg-white h-full`}>
@@ -28,7 +29,7 @@ const HomeScreen = () => {
         />
 
         <GooglePlacesAutocomplete
-        placeholder="Where From?"
+        placeholder={"Where From?"}
         styles={{
           container: {
             flex: 0,
