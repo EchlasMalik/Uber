@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Map from '../components/Map';
 import NavigateCard from '../components/NavigateCard';
 import RideOptionsCard from '../components/RideOptionsCard';
+import PaymentCard from '../components/PaymentCard';
 import MapView from 'react-native-maps';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Icon } from 'react-native-elements';
@@ -50,6 +51,13 @@ const MapScreen = () => {
           <Stack.Screen
             name="RideOptionsCard"
             component={RideOptionsCard}
+            options={{
+              headerShown: false,
+            }}
+          />
+          <Stack.Screen
+            name="PaymentCard"
+            component={PaymentCard}
             options={{
               headerShown: false,
             }}

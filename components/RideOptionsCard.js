@@ -6,7 +6,8 @@ import { Icon, Image } from 'react-native-elements'
 import { useNavigation } from '@react-navigation/native'
 import { FlatList } from 'react-native-gesture-handler'
 import { useSelector } from 'react-redux'
-import { selectTravelTimeInformation } from '../slices/navSlice'
+import { selectPrice, selectTravelTimeInformation, setPrice } from '../slices/navSlice'
+import { useDispatch } from 'react-redux'
 
 const data = [
   {
@@ -35,10 +36,21 @@ const RideOptionsCard = () => {
   const navigation = useNavigation();
   const[selected, setSelected] = useState(null);
   const travelTimeInformation = useSelector(selectTravelTimeInformation);
+  const dispatch = useDispatch();
+  const price = useSelector(selectPrice);
+
+  const handlePress = () => {
+    // Dispatch the setPrice action to save the price in Redux
+    dispatch(setPrice(price));
+
+    // Navigate to PaymentCard screen
+    navigation.navigate("PaymentCard");
+    console.log(price);
+  };
 
   return (
     <SafeAreaView style={tw`bg-white flex-grow`}>
-      <View style>
+      <View>
         <TouchableOpacity 
           onPress={() => navigation.navigate("NavigateCard")}
           style={tw`absolute top-3 left-5 p-3 -mt-10`}
@@ -77,11 +89,13 @@ const RideOptionsCard = () => {
             
             </Text>
           </TouchableOpacity>
+          
         )}
       />
 
       <View style={tw`mt-auto border-t border-gray-200`}>
-        <TouchableOpacity 
+        <TouchableOpacity
+          onPress={handlePress} 
           disabled={!selected} 
           style={tw`bg-black py-3 m-3 ${!selected && "bg-gray-300"}`}>
           <Text style={tw`text-center text-white text-xl`}>Choose {selected?.title}</Text>
