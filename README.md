@@ -1,8 +1,16 @@
 # Uber Clone with React Native
 
+## Video Demo
+https://github.com/user-attachments/assets/bc6a0287-5983-49b0-8117-8023311da957
+
+- Location search with Google Places API
+- Ride request and ETA display
+- Responsive design for both Android and iOS
+- Accepting Crypto payments via BTC & LTC
+
 ## Project Overview
 
-This is a clone of the Uber ride-sharing application built using **React Native**. The application integrates with **Google Places API**, **Google Matrix API** for calculating distance and duration of rides, **Redux** for state management, **Tailwind CSS** for styling, and **Google Autocomplete** for location search functionality. This project demonstrates how to build a fully functional ride-hailing app with core features such as real-time location tracking, ride request, and payment (mocked).
+This is a clone of the Uber ride-sharing application built using **React Native**. The application integrates with **Google Places API**, **Google Matrix API** for calculating distance and duration of rides, **Redux** for state management, **Tailwind CSS** for styling, and **Google Autocomplete** for location search functionality. This project demonstrates how to build a fully functional ride-hailing app with core features such as real-time location tracking, ride request, and cryptocurrency payments (Any crypto sent to the displayed address will be treated as a donation).
 
 ## Features
 
@@ -23,8 +31,6 @@ This is a clone of the Uber ride-sharing application built using **React Native*
   - Google Matrix API (for calculating ride distance and duration)
   - Google Autocomplete (for location auto-suggestions)
   
-## Installation
-
 ### Prerequisites
 
 Before you can run this app, make sure you have the following installed:
@@ -132,11 +138,3 @@ We welcome contributions! If you want to contribute to this project, please fork
 - Fix bugs or issues
 - Enhance UI/UX
 - Add new features
-
-## Acknowledgments
-
-- **Google API:** Thanks to Google for providing the Places API and Matrix API for location and distance services.
-- **React Native:** A big thank you to the React Native team for making cross-platform app development seamless.
-- **Tailwind CSS:** Tailwind CSS is a fantastic utility-first CSS framework that helped us build a responsive design.
-- **Redux:** Redux made managing state across multiple components easy and efficient.
-```
