@@ -1,18 +1,16 @@
 # Uber Clone with React Native
 
 ## Video Demo
-Watch the demo video of the Uber Clone app to see it in action! The video showcases key features such as:
-
-Watch the Demo:
-
+https://github.com/user-attachments/assets/bc6a0287-5983-49b0-8117-8023311da957
 
 - Location search with Google Places API
 - Ride request and ETA display
 - Responsive design for both Android and iOS
+- Accepting Crypto payments via BTC & LTC
 
 ## Project Overview
 
-This is a clone of the Uber ride-sharing application built using **React Native**. The application integrates with **Google Places API**, **Google Matrix API** for calculating distance and duration of rides, **Redux** for state management, **Tailwind CSS** for styling, and **Google Autocomplete** for location search functionality. This project demonstrates how to build a fully functional ride-hailing app with core features such as real-time location tracking, ride request, and payment (mocked).
+This is a clone of the Uber ride-sharing application built using **React Native**. The application integrates with **Google Places API**, **Google Matrix API** for calculating distance and duration of rides, **Redux** for state management, **Tailwind CSS** for styling, and **Google Autocomplete** for location search functionality. This project demonstrates how to build a fully functional ride-hailing app with core features such as real-time location tracking, ride request, and cryptocurrency payments (Any crypto sent to the displayed address will be treated as a donation).
 
 ## Features
 
@@ -33,8 +31,6 @@ This is a clone of the Uber ride-sharing application built using **React Native*
   - Google Matrix API (for calculating ride distance and duration)
   - Google Autocomplete (for location auto-suggestions)
   
-## Installation
-
 ### Prerequisites
 
 Before you can run this app, make sure you have the following installed:
