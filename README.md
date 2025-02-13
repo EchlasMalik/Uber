@@ -6,9 +6,9 @@ Watch the demo video of the Uber Clone app to see it in action! The video showca
 Watch the Demo:
 
 
-Location search with Google Places API
-Ride request and ETA display
-Responsive design for both Android and iOS
+- Location search with Google Places API
+- Ride request and ETA display
+- Responsive design for both Android and iOS
 
 ## Project Overview
 
