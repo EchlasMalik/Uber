@@ -50,7 +50,7 @@ const PaymentCard = () => {
                 <Text style={tw`text-white text-lg`}>Litecoin</Text>
             </TouchableOpacity>
             </View>
-            <Text style={tw`text-lg text-center mb-2 text-gray-500`}>Total: ${price}</Text>
+            <Text style={tw`text-lg text-center mb-2 text-black-500`}>Total: £{price}</Text>
             {selectedAddress && (
                 <View style={tw`mt-5 justify-center items-center`}>
                 <Text style={tw`text-sm text-center mb-2 text-gray-500`}>Wallet Address: {selectedAddress}</Text>

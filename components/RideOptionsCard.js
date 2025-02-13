@@ -40,12 +40,15 @@ const RideOptionsCard = () => {
   const price = useSelector(selectPrice);
 
   const handlePress = () => {
+
+    const calculatedPrice = Math.round(travelTimeInformation?.duration?.value * SURGE_CHARGE_RATE * selected?.multiplier) / 100;
+
     // Dispatch the setPrice action to save the price in Redux
-    dispatch(setPrice(price));
+    dispatch(setPrice(calculatedPrice));
 
     // Navigate to PaymentCard screen
     navigation.navigate("PaymentCard");
-    console.log(price);
+    console.log(calculatedPrice);
   };
 
   return (
